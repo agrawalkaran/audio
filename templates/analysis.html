@@ -1,0 +1,88 @@
+{% extends "layout1.html" %}
+{% block body%}
+
+<html>
+    <head>
+        <style>
+            .center {
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  background-color:red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+        body { 
+			text-align: center; 
+		} 
+		
+		h1 { 
+			color: green; 
+		} 
+        </style>
+    </head>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+ 
+
+<body> 
+<center>
+	<h1>Upload Audio File</h1> 
+	<br>
+    <br>
+	<form action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">  
+	<!----	<input type="file" name="audio" accept="audio/* ">-->
+    
+ <input type="file" name="file" accept=".wav" />
+		<!--<button type="button" class="btn btn-primary btn-lg " id="btn-predict-ResNet50">CNN Predict!</button>-->
+		<input type="submit" class="button">
+	</form>
+</center>	
+</body> 
+    </br>
+</br>
+</br>
+</br>
+</br>
+<center><h1><b>{{prediction_text}}</b></h1></center>
+</br>
+</br>
+</br>
+<!--{% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-success">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}-->
+    
+</br>
+</br>
+</br>
+
+</br>
+
+</html>
+
+
+{% endblock %}
