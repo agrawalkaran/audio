@@ -1,0 +1,15 @@
+Flask==0.12.2
+gunicorn==20.0.4
+email-validator==1.1.2
+Flask-SQLAlchemy==2.4.0
+Flask-WTF==0.14.2
+form==0.0.1
+Jinja2==2.10.1
+Keras==2.4.3
+librosa==0.8.0
+numba==0.52.0
+numpy==1.19.5
+WTForms==2.2.1
+tensorflow==2.4.1
+
+
